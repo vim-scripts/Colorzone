@@ -1,0 +1,19 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2681
+
+Colorzone use more soft colors for read comfortably but isn't dazzling .
+
+Based on "tango-morning" and "wargreycolorscheme" color scheme.
+
+Maybe has display problem in other file types, can works with both GUI and console.
+You can chose another color for pop up menu.
+
+I want change the colors to suitable for Tango Icon Theme Guidelines in the future.
+http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines
+
+Screen Shots:
+http://farm5.static.flickr.com/4042/4686809567_b2972b033c_b.jpg
+
+If your terminal can use RGB colors, use this escape sequence colors:
+ff888a85,ffef2929,ff8ae234,ffe9b96e,ff00bfff,ffda70d6,ff87ceeb,ffeeeeec
+gray     red      green    yellow   blue     magenta  cyan     white
+The Terminal colors and GUI colors are different.
