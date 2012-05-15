@@ -20,11 +20,12 @@ let colors_name = "colorzone"
 hi Normal  ctermfg=black ctermfg=yellow guifg=#2e3436 guibg=#eeeeec
 hi NonText ctermfg=black guifg=#eeeeec  guibg=#eeeeec
 
+hi ColorColumn cterm=reverse ctermbg=red   ctermfg=white guibg=#fcaf3e guifg=black
 "Cursor
 hi Cursor       cterm=reverse ctermbg=red   ctermfg=white guibg=#ef2929 guifg=white
 hi CursorIM     cterm=reverse ctermbg=red   ctermfg=white guibg=#ef2929 guifg=white
-hi CursorLine   ctermbg=none  ctermfg=magenta  guibg=#eeeeec guifg=#e06800
 hi CursorColumn ctermbg=none  ctermfg=none  guibg=#555753
+hi CursorLine   ctermbg=none  ctermfg=magenta  guibg=#eeeeec guifg=#e06800
 
 "Symbol
 hi Directory    ctermfg=blue   guifg=#3465a4
@@ -40,9 +41,9 @@ hi ErrorMsg   ctermbg=red    ctermfg=white   guibg=#cc0000 guifg=#eeeeec
 "hi Pmenu      ctermbg=yellow   ctermfg=blue guibg=#87ceeb guifg=black
 hi Pmenu      cterm=none     ctermbg=green   ctermfg=white  guibg=#6b8e23 guifg=white
 hi PmenuSel   cterm=none     ctermbg=blue    ctermfg=yellow guibg=#fcaf3e guifg=black
-hi PmenuSbar  ctermbg=none   ctermfg=grey    guibg=#2e3436  guifg=white
-hi PmenuThumb ctermfg=cyan   guibg=#2e3436   guifg=white
-hi WildMenu   ctermbg=cyan   guibg=#edd400   guifg=#888a85
+hi PmenuSbar  ctermbg=none   ctermfg=grey    guibg=#729fcf  guifg=white
+hi PmenuThumb ctermfg=cyan   guibg=#729fcf   guifg=white
+hi WildMenu   ctermbg=cyan   guibg=#edd400   guifg=#729fcf
 
 "Search
 "hi Search ctermbg=LightRed ctermfg=white guibg=#ff4500 guifg=white
@@ -54,7 +55,7 @@ hi Title      ctermfg=green    guifg=#4e9a06
 
 "Fold
 hi Folded     ctermfg=blue     guibg=#d3d7cf guifg=#204a87
-hi FoldColumn ctermfg=grey     guibg=#888a85 guifg=#204a87
+hi FoldColumn ctermfg=grey     guibg=#eeeeec guifg=#204a87
 
 "Vim Diff
 hi DiffAdd    ctermfg=green    guifg=white guibg=#6b8e23
@@ -68,13 +69,8 @@ hi SpellCap   ctermfg=green    guifg=green
 hi SpellLocal ctermfg=brown    guifg=brown
 hi SpellRare  ctermfg=yellow   guifg=yellow
 
-"Debugging 
+"Debugging
 hi Debug      ctermfg=red      guifg=red
-
-"Colors for comments
-hi Comment    ctermfg=darkgrey guifg=#888a87 
-hi SpecialComment ctermfg=grey guifg=#2e3436
-hi SpecialKey ctermfg=cyan     guifg=#3465a4
 
 "Syntax elements
 hi Builtin    ctermfg=lightblue  guifg=#e06800
@@ -99,10 +95,15 @@ hi Float     ctermfg=red     guifg=red
 hi Number    ctermfg=magenta guifg=#ff00ff
 hi String    ctermfg=cyan    guifg=#8a2be2
 
+"Colors for comments
+hi Comment    ctermfg=darkgrey guifg=#888a87 
+
 "The special characters
-hi Special     ctermfg=magenta   guifg=#ce5c00  guibg=#eeeeec
-hi SpecialChar ctermfg=red   guifg=red
-hi Underlined  ctermfg=blue  guifg=#204a87
+hi Special    ctermfg=magenta  guifg=#3465a4  guibg=#eeeeec
+hi SpecialKey ctermfg=cyan     guifg=#3465a4
+hi SpecialChar ctermfg=red     guifg=red
+hi SpecialComment ctermfg=grey guifg=#2e3436
+hi Underlined ctermfg=blue     guifg=#e06800  guibg=#eeeeec
 
 "The preprocessors
 hi PageMark    ctermfg=LightCyan   guifg=#4169e1
